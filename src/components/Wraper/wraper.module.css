@@ -1,0 +1,11 @@
+.wraper {
+  /* margin: 100px; */
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  width: 900px;
+
+  margin: 0px auto;
+
+  background-color: #e7ecf2;
+}
