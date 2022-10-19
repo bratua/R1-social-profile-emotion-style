@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/R1-social-profile-emotion-style/static/css/main.64ba0479.css",
+    "main.js": "/R1-social-profile-emotion-style/static/js/main.8ee534a1.js",
+    "index.html": "/R1-social-profile-emotion-style/index.html",
+    "main.64ba0479.css.map": "/R1-social-profile-emotion-style/static/css/main.64ba0479.css.map",
+    "main.8ee534a1.js.map": "/R1-social-profile-emotion-style/static/js/main.8ee534a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64ba0479.css",
+    "static/js/main.8ee534a1.js"
+  ]
+}
