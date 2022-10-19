@@ -1,14 +1,11 @@
 import PropTypes from 'prop-types';
-import css from './friendList.module.css';
-import FriendListItem from '../FriendListItem/FriendListItem';
+import { Friends } from './FriendList.styled';
+import FriendListItem from './FriendListItem/FriendListItem';
 
 function FriendList({ friends }) {
   return (
-    <ul className={css.friendList}>
+    <Friends>
       {friends.map(friend => {
-        // console.log('Friend===', friend);
-        // const id = friend.id;
-        // console.log(id);
         return (
           <FriendListItem
             key={friend.id}
@@ -18,7 +15,7 @@ function FriendList({ friends }) {
           />
         );
       })}
-    </ul>
+    </Friends>
   );
 }
 
