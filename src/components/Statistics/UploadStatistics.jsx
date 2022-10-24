@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Box from 'components/Box/Box';
 
 import {
   Statistics,
@@ -11,10 +12,10 @@ import {
 
 function UploadStatistics({ data, title }) {
   return (
-    <Statistics>
+    <Box as="section" width="statisticsWidth">
       {title && <Title>{title}</Title>}
 
-      <StatList>
+      <Box as="ul" m={0} p={0} display="flex">
         {data.map(statData => {
           const { id, label, percentage } = statData;
           return (
@@ -24,10 +25,30 @@ function UploadStatistics({ data, title }) {
             </StatItem>
           );
         })}
-      </StatList>
-    </Statistics>
+      </Box>
+    </Box>
   );
 }
+
+// function UploadStatistics({ data, title }) {
+//   return (
+//     <Statistics>
+//       {title && <Title>{title}</Title>}
+
+//       <StatList>
+//         {data.map(statData => {
+//           const { id, label, percentage } = statData;
+//           return (
+//             <StatItem key={id}>
+//               <StatLebel>{label}</StatLebel>
+//               <StatPercentage>{percentage}%</StatPercentage>
+//             </StatItem>
+//           );
+//         })}
+//       </StatList>
+//     </Statistics>
+//   );
+// }
 
 UploadStatistics.propTypes = {
   title: PropTypes.string.isRequired,

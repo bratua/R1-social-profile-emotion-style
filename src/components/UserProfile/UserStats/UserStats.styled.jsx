@@ -1,30 +1,39 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
-export const StatsList = styled.ul`
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #f3f6f9;
-  height: 155px;
-`;
+// export const StatsList = styled.ul`
+// padding: 0px;
+// margin: 0px;
+// display: flex;
+// justify-content: center;
+// background-color: blue;
+// height: 300px;
+// `;
 
 export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   flex: 1 1 33.3333%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  outline: 2px solid #e4e9f0;
+  /* border: 2px; */
+  border: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.colors.statsBorderColor};
+  border-style: ${p => p.theme.borderStyles.line};
 `;
 
 export const Label = styled.span`
-  color: #768696;
+  font-weight: ${p => p.theme.fontWeights[1]};
+  font-size: ${p => p.theme.fontSizes[3]};
+  color: ${p => p.theme.colors.secondTextColor};
+  margin-bottom: ${p => p.theme.space[5]}px;
+
+  /* font-weight: 500;
   font-size: 30px;
+  color: #768696; */
 `;
 
 export const Quantity = styled.span`
-  font-weight: 700;
-  font-size: 35px;
-  color: #1f3349;
+  font-weight: ${p => p.theme.fontWeights[3]};
+  font-size: ${p => p.theme.fontSizes[3]};
+  color: ${p => p.theme.colors.thirdTextColor};
 `;

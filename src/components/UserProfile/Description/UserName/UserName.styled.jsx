@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Name = styled.p`
-  margin: 65px 0 0 0;
-  font-weight: 700;
+  font-weight: 900;
 `;

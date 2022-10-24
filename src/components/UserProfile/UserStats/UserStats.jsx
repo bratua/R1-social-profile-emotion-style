@@ -1,9 +1,19 @@
 import PropTypes from 'prop-types';
-import { StatsList, StatsItem, Label, Quantity } from './UserStats.styled';
+import Box from 'components/Box/Box';
+import { StatsItem, Label, Quantity } from './UserStats.styled';
 
 const UserStats = ({ followers, views, likes }) => {
   return (
-    <StatsList>
+    <Box
+      as="ul"
+      display="flex"
+      p="0"
+      m="0"
+      height="userStatsHeight"
+      justifyContent="center"
+      alignContent="center"
+      bg="statsBackgroundColor"
+    >
       <StatsItem>
         <Label>Followers</Label>
         <Quantity>{followers}</Quantity>
@@ -16,7 +26,7 @@ const UserStats = ({ followers, views, likes }) => {
         <Label>Likes</Label>
         <Quantity>{likes}</Quantity>
       </StatsItem>
-    </StatsList>
+    </Box>
   );
 };
 

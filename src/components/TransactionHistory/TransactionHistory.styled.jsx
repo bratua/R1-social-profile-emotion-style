@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Table = styled.table`
-  table-layout: fixed;
+  /* table-layout: fixed;
   width: 300px;
   margin: 20px;
   border-collapse: collapse;
@@ -9,35 +9,44 @@ export const Table = styled.table`
 
   text-align: center;
   font-size: 14px;
-  color: #5f6366;
+  color: #1f3349;
 
-  box-shadow: 3px 3px 20px #d6d6d6;
-
+  box-shadow: 3px 3px 20px #d6d6d6; */
+  /* 
   th,
   td {
-    border: 1px solid #e4e4e4;
-    padding: 15px;
-  }
+    border: ${p => p.theme.borders.thin};
+    border-style: ${p => p.theme.borderStyles.line};
+    border-color: ${p => p.theme.colors.green};
+    padding: ${p => p.theme.space[7]}px;
+  } */
 `;
 
 export const TableHeader = styled.thead`
-  background-color: #00bcd5;
+  background-color: ${p => p.theme.colors.tableHeaderBackgroundColor};
   text-transform: uppercase;
-  color: white;
+  color: ${p => p.theme.colors.white};
 
   th {
     width: 33.3333%;
+    border: ${p => p.theme.borders.thin};
+    border-style: ${p => p.theme.borderStyles.line};
+    border-color: ${p => p.theme.colors.mainBorderColor};
+    padding: ${p => p.theme.space[7]}px;
   }
 `;
 
 export const TableBody = styled.tbody`
   td {
-    border: 1px solid white;
+    border: ${p => p.theme.borders.thin};
+    border-style: ${p => p.theme.borderStyles.line};
+    border-color: ${p => p.theme.colors.mainBorderColor};
+    padding: ${p => p.theme.space[7]}px;
   }
 `;
 
 export const TableRow = styled.tr`
   :nth-of-type(even) {
-    background-color: #ecf1f4;
+    background-color: ${p => p.theme.colors.tableCellMarkedBackgroundColor};
   }
 `;

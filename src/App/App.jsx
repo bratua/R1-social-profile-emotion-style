@@ -7,19 +7,17 @@ import user from '../Data/user.json';
 import statistics from '../Data/statistics.json';
 import friends from '../Data/friends.json';
 import transactions from '../Data/transactions.json';
+import Box from '../components/Box/Box';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        gap: 50,
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
+    <Box
+      height="100vh"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      fontSize={40}
+      color="mainTextColor"
     >
       <UserProfile
         key={user.username}
@@ -32,6 +30,6 @@ export const App = () => {
       <UploadStatistics data={statistics} title="Upload stats" />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </div>
+    </Box>
   );
 };
