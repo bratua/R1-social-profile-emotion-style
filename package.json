@@ -1,8 +1,8 @@
 {
-  "name": "Social Profile-emotion-style",
+  "name": "Social Profile hooks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bratua.github.io/R1-social-profile-emotion-style/",
+  "homepage": "https://bratua.github.io/social-profile-hooks/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
